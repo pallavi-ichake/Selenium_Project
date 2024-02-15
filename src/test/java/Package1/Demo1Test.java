@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class Demo {
+public class Demo1Test {
 
 	@Test
 	public void setup()
@@ -15,8 +15,8 @@ public class Demo {
 		   FirefoxOptions options = new FirefoxOptions();
 		   WebDriver driver = new FirefoxDriver(options);
 		    driver.navigate().to("http://www.google.com/"); 
-		    driver.findElement(By.name("q")).sendKeys("javatpoint tutorials");  
-
+		    driver.findElement(By.name("q")).sendKeys("Pallavi");  
+            System.out.println("Pallavi send for search");
 	}
 
 }
